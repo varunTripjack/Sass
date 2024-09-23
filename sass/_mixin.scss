@@ -1,0 +1,13 @@
+@mixin flexprop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin lineprop($letter, $casing){
+    color: red;
+    font-size: 5rem;
+    letter-spacing: $letter;
+    text-transform: $casing;
+}

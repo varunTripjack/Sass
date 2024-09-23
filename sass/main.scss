@@ -1,0 +1,45 @@
+@import "mixin";
+@import "var";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//operators
+//variables
+//nesting
+//mixin
+//parameters
+//partials 
+ 
+
+
+.main_header{ 
+    @include flexprop;
+
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: $bg-color;
+
+    h1{
+        @include lineprop(1rem, uppercase); 
+        &:hover{
+            color: black;
+        }
+        &::after{
+            content: " This";
+        }
+    }
+    
+    p{
+        @include lineprop(.3rem, lowercase);
+    }
+    
+}
+
+
+

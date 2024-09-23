@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: greenyellow;
+}
+.main_header h1 {
+  color: red;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.main_header h1:hover {
+  color: black;
+}
+.main_header h1::after {
+  content: " This";
+}
+.main_header p {
+  color: red;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-transform: lowercase;
+}/*# sourceMappingURL=main.css.map */
